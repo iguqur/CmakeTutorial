@@ -1,0 +1,1 @@
+double mySqrt(double value);
