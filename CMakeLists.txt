@@ -34,3 +34,9 @@ endif (USE_MYMATH)
 set(SOURCE_FILES main.cpp)
 add_executable(CMakeTutorial ${SOURCE_FILES})
 target_link_libraries(CMakeTutorial ${EXTRA_LIBS})
+
+
+# add the install targets
+install (TARGETS CMakeTutorial DESTINATION bin)
+install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+        DESTINATION include)
